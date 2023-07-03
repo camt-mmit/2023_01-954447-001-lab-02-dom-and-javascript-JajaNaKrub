@@ -11,7 +11,7 @@ function createElement() {
   }`;
 
   container
-    .querySelector('input[type="number"].app-cmp-input')
+    .querySelector('input[type="number"].app-cmpq-input')
     .addEventListener("change", () => {
       const result = [
         ...document.querySelectorAll('input[type="number"].app-cmp-input'),
