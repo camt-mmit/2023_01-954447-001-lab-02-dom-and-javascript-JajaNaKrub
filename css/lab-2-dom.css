@@ -6,8 +6,8 @@
 
   --app-icon-fill: 0;
 
-  --app-primary-color: blue;
-  --app-warn-color: red;
+  --app-primary-color: #a8d1d1;
+  --app-warn-color: #fd8a8a;
 
   font-family: var(--app-font);
   font-size: var(--app-font-size);
@@ -21,6 +21,9 @@ button {
   column-gap: 4px;
 
   font-weight: bold;
+}
+body {
+  background-color: #f1f7b5;
 }
 
 button > * {
@@ -39,11 +42,15 @@ input[type="number"],
 }
 
 .app-cl-primary {
-  color: var(--app-primary-color);
+  color: azure;
+  border: 3px solid #8ecaca;
+  background-color: var(--app-primary-color);
 }
 
 .app-cl-warn {
-  color: var(--app-warn-color);
+  color: azure;
+  border: 3px solid #fc7e7e;
+  background-color: var(--app-warn-color);
   --app-icon-fill: 1;
 }
 .app-cl-warn:disabled {
@@ -113,9 +120,36 @@ input[type="number"],
 .app-cmp-sec-element {
   display: inline-flex;
   flex-direction: row;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 3px double black;
+}
+
+.app-cmp-add-input {
 }
 section {
   background-color: blanchedalmond;
   border: 3px double burlywood;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5ch;
+  padding: 2ch 2ch 2ch 2ch;
+}
+
+.app-cmd-add-input button {
+  margin-left: 0;
+}
+.app-cmp-add-sec {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-cmp-sec-element {
+  display: flex;
+  justify-content: space-between;
 }
